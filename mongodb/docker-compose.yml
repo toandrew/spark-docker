@@ -1,0 +1,7 @@
+version: '2'
+services:
+  spark-mongodb:
+    image: mongo:latest
+    container_name: spark-mongodb
+    ports:
+      - "27017:27017"

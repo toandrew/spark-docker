@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-logFile = "hdfs://10.0.0.169:9000/README.md"  # Should be some file on your system
+logFile = "hdfs://10.0.0.169:8020/input.txt"  # Should be some file on your system
 spark = SparkSession.builder.appName("SimpleApp").getOrCreate()
 logData = spark.read.text(logFile).cache()
 
