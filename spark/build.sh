@@ -13,9 +13,9 @@ build() {
     cd -
 }
 
-#build base
-#build master
-#build worker
-#build submit
+build base
+build master
+build worker
+build submit
 #build java-template template/java
 build python-template template/python

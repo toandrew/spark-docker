@@ -1,0 +1,8 @@
+version: '2'
+services:
+  example:
+    build: .
+    container_name: spark-python-example
+    hostname: 172.22.0.2
+    extra_hosts:
+      spark-master: 10.0.4.234

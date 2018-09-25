@@ -15,6 +15,7 @@ else
     if [ -f "${SPARK_APPLICATION_PYTHON_LOCATION}" ]; then
         echo "Submit application ${SPARK_APPLICATION_PYTHON_LOCATION} to Spark master ${SPARK_MASTER_URL}"
         echo "Passing arguments ${SPARK_APPLICATION_ARGS}"
+        echo "Passing spark arguments [${SPARK_SUBMIT_ARGS}]"
         PYSPARK_PYTHON=python3 /spark/bin/spark-submit \
             --master ${SPARK_MASTER_URL} \
             ${SPARK_SUBMIT_ARGS} \
