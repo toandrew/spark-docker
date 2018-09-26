@@ -1,0 +1,16 @@
+build.sh: 创建各个docker images(base, master, worker, ...)
+docker-compose.yml: 伪集群模式(一台机器启动spark的master及worker)
+docker-compose-cluster-xxx.yml: 集群模式(两台机器分别启动master及worker)
+
+用法：
+伪集群：
+1. docker-compose up -d
+
+集群模式:
+1. 确认xiaoyezi-overlay网络存在(docker network ls), 没有则创建
+2. 在两台机器上启动master或worker
+master: 
+#docker-compose -f docker-compose-cluster-master.yml up -d
+
+worker:
+#docker-compose -f docker-compose-cluster-worker.yml up -d

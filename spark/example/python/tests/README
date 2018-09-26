@@ -1,0 +1,8 @@
+app:保存测试代码
+local: 伪集群模式运行的测试docker
+cluster: 集群模式运行的测试docker
+
+
+运行测试程序，需要先启动对应的测试docker
+1. docker-compose build
+2. docker-compose up

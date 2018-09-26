@@ -1,0 +1,11 @@
+version: '2'
+services:
+  example:
+    build: .
+    container_name: spark-python-example
+    extra_hosts:
+      spark-master: 10.0.4.234
+networks:
+  default:
+    external:
+      name: xiaoyezi-overlay
